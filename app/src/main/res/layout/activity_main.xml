@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.nkmr.myradius.MainActivity">
+
+    <!--通常のボタン-->
+    <Button
+        android:id="@+id/buttonNormal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:background="@color/button_material_light"
+        android:text="普通"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="54dp"
+        android:layout_marginStart="87dp"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="87dp"/>
+
+    <!--角丸5dpのボタン-->
+    <Button
+        android:id="@+id/buttonRoundedCorners5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/shape_rounded_corners_5dp"
+        android:text="角丸(5dp)"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        android:layout_marginTop="30dp"
+        app:layout_constraintTop_toBottomOf="@+id/buttonNormal"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintHorizontal_bias="0.554"/>
+
+    <!--角丸10dp-->
+    <Button
+        android:id="@+id/buttonRoundedCorners10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/shape_rounded_corners_10dp"
+        android:text="角丸(10dp)"
+        tools:layout_constraintTop_creator="1"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="37dp"
+        app:layout_constraintTop_toBottomOf="@+id/buttonRoundedCorners5dp"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/buttonRoundedCorners5dp"
+        android:layout_marginLeft="16dp"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="152dp"
+        android:layout_height="74dp"
+        android:background="@drawable/shape_rounded_corners_10dp"
+        android:gravity="center"
+        android:text="TextView"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="99dp"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+</android.support.constraint.ConstraintLayout>
